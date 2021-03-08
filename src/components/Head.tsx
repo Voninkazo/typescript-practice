@@ -8,7 +8,7 @@ type Props = {
     title: string;
     isActive?: boolean;
     // thing: number;
-    // thing2: string[];
+    // thing2: string[]; or Array<string>
     // thing3: {};
     // thing4: {
     //     name: string;

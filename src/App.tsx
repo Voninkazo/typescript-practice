@@ -4,11 +4,16 @@ import './App.css';
 import {Head} from './components/Head';
 import Button from './components/Button';
 import Input from './components/Input';
+import ReducerButtons from './components/ReducerButtons';
+import {GlobalProvider} from './components/GlobalState';
+import BigC from './components/BigC';
 
 const App = () => {
   return (
+    <GlobalProvider>
     <div className="App">
       <Head title="Hello" isActive={true}/>
+      <BigC title="class"/>
 
       {/* <Button onClick={(text) => {
         console.log(text);
@@ -22,6 +27,8 @@ const App = () => {
       </Button>
 
       <Input />
+
+      <ReducerButtons />
 
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -38,6 +45,7 @@ const App = () => {
         </a>
       </header>
     </div>
+    </GlobalProvider>
   );
 }
 
